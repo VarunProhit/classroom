@@ -56,6 +56,7 @@ for (let i = 0; i < classtable.length; i++) {
         day == classtable[i].day 
     )
     {
+      
         $(".subject").text(classtable[i].subjectcode +" : "+classtable[i].subjectname );
         $("a").attr("href", classtable[i].classlink);
         $(".facultyname").text("Faculty:- "+classtable[i].faculityname);   
@@ -96,6 +97,8 @@ else
 
 // var vid = document.getElementById("myVideo");
 // vid.playbackRate = 0.5;
+
+
 
 
 
