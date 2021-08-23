@@ -51,8 +51,8 @@ for (let i = 0; i < classtable.length; i++) {
         $(".subject").text("Class Will Start In:- "+ (9 - hour) + "hr:"+ (60 - minute) +"min" );
     }
     else if (
-      (currenttime >= classtable[i].timestart)  ||
-      (currenttime <= classtable[i].timeend) ||
+      (currenttime >= classtable[i].timestart)  &&
+      (currenttime <= classtable[i].timeend) &&
         day == classtable[i].day 
     )
     {
