@@ -64,7 +64,7 @@ for (let i = 0; i < classtable.length; i++) {
         $(".slot").addClass("slot1");
         console.log("pass");
     }
-    else if(hour>17){
+    else if(hour>=17){
         $(".break").text("All class over" );
        
         $("Button").hide(); 
