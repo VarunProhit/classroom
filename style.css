@@ -109,9 +109,10 @@ a{
     .detail
     {
         font-size: 0.5rem;
+        color: whitesmoke;
+        text-align: center;
         top: 40%;
         left: 50%;
-        width: 55%;
-        text-align: center;
+        width: 62%;
     }
 }
