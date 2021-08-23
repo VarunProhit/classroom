@@ -46,7 +46,7 @@ if(day>=1 && day<=4)
 {
 for (let i = 0; i < classtable.length; i++) {
    
-    if(hour<9)
+    if(hour>9)
     {
         $(".subject").text("Class Will Start In:- "+ (9 - hour) + "hr:"+ (60 - minute) +"min" );
     }
