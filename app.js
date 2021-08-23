@@ -1,3 +1,4 @@
+$("Button").hide();
 var today = new Date();
   var day = today.getDay();
   var daylist = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
@@ -47,12 +48,12 @@ for (let i = 0; i < classtable.length; i++) {
    
     if(hour<9)
     {
-        $(".subject").text("Class Will Start In"+ 9 - hour + "hr"+ 60 - minute +"min" );
+        $(".subject").text("Class Will Start In:- "+ (9 - hour) + "hr:"+ (60 - minute) +"min" );
     }
     else if (
       (currenttime >= classtable[i].timestart)  &&
       (currenttime <= classtable[i].timeend) &&
-        day == classtable[i].day
+        day == classtable[i].day 
     )
     {
         $(".subject").text(classtable[i].subjectcode +" : "+classtable[i].subjectname );
@@ -62,9 +63,10 @@ for (let i = 0; i < classtable.length; i++) {
         $(".subject").addClass("subject1");
         $(".facultyname").addClass("facultyname1");   
         $(".slot").addClass("slot1");
+        $(".btn").text("Join Class");
         console.log("pass");
     }
-    else if(hour>17){
+    else if(hour>=17){
         $(".break").text("All Classes Over" );
        
         $("Button").hide(); 
@@ -94,4 +96,6 @@ else
 
 // var vid = document.getElementById("myVideo");
 // vid.playbackRate = 0.5;
+
+
 
