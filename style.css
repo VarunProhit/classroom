@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+/* .detail{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    padding-top: 10%;
+    font-size: 1rem;
+    background-color: rgba(38, 41, 46, 0.2);
+  color: #faf8fc;
+  right: 0px;
+  left: 0px;
+  
+
+} */
+.detail
+{
+    font-size: 1rem;
+    position: absolute;
+    z-index: 10;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: whitesmoke;
+    height: auto;
+    width: 75%;
+    /* background-color: rgb(27, 25, 39,0.5);
+    padding-bottom: 5rem;
+    padding-top: 5rem; */
+}
+
+#myVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+  }
+  .date1{
+      padding-top: 2%;
+
+  }
+  .slot1
+  {
+    padding-top: 2%;
+    
+  }
+  .slot1{
+    color: darkgoldenrod;
+  }
+.subject1
+{
+    padding-top: 2%;
+   
+} 
+.subject
+{
+    color: yellow;
+}  
+.break
+{
+    color: yellow;
+}   
+.break1
+{
+    padding-top: 2%;
+}       
+.facultyname1
+{
+    padding-top: 2%;
+    
+} 
+.meet1
+{
+    padding-top: 2%;
+}
+.btn
+{
+    margin-top: 2%;
+   padding: 1%;
+   border-radius: 1rem; 
+   border-width: 0;
+   background-color: aqua;
+   padding-left: 1%;
+   padding-right: 1%;
+   font-size: 1rem;
+   font-weight: bold;
+} 
+.btn:hover
+{
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    
+}            
+@media screen and (max-width: 600px)
+{
+    .detail
+    {
+        font-size: 0.5rem;
+        color: whitesmoke;
+        text-align: center;
+        top: 40%;
+        left: 50%;
+        width: 60%;
+    }
+}
