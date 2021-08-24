@@ -55,7 +55,8 @@ for (let i = 0; i < classtable.length; i++) {
    
     if(hour<9)
     {
-        $(".subject").text("Class Will Start In:- "+ (9 - hour) + "hr:"+ (60 - minute) +"min" );
+        //$(".subject").text("Class Will Start In:- "+ (9 - hour) + "hr:"+ (60 - minute) +"min" );
+      $(".subject").text("Class Will Start In:- "+ (9.0 - hr) + "hr:"+ (60 - mi) +"min:"+(60-se)+"sec" );
         $(".subject").addClass("subject1");
         $("Button").hide();
 
