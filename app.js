@@ -41,7 +41,14 @@ var classtable=[
 
 ]
 //$(".day").text("Today is : " + daylist[day] + ".");
- $(".date").text(today);
+function updateClock() {
+    var now = new Date(); 
+   // document.getElementById('tim').innerHTML = [now];
+   $(".date").text(now);
+    setTimeout(updateClock, 1000);
+}
+updateClock();
+// $(".date").text(today);
 if(day>=1 && day<=4)
 {
 for (let i = 0; i < classtable.length; i++) {
@@ -50,8 +57,19 @@ for (let i = 0; i < classtable.length; i++) {
     {
         $(".subject").text("Class Will Start In:- "+ (9 - hour) + "hr:"+ (60 - minute) +"min" );
         $(".subject").addClass("subject1");
-         $("Button").hide();   
-        
+        $("Button").hide();
+
+
+        function updatClock() {
+            var n = new Date(); 
+            var hr = n.getHours();
+            var mi = n.getMinutes();
+            var se = n.getSeconds();
+           // document.getElementById('tim').innerHTML = [now];
+           $(".subject").text("Class Will Start In:- "+ (9 - hr) + ":"+ (60 - mi) +":"+(60-se) );
+            setTimeout(updatClock, 1000);
+        }
+        updatClock();
     }
     else if (
       (currenttime >= classtable[i].timestart)  &&
@@ -100,4 +118,25 @@ else
 
 // var vid = document.getElementById("myVideo");
 // vid.playbackRate = 0.5;
+
+// function updateClock() {
+//     var now = new Date(); // current date
+//         // months = ['January', 'February', '...']; // you get the idea
+//         // time = now.getHours() + ':' + now.getMinutes()+':'+now.getSeconds(), // again, you get the idea
+
+//         // a cleaner way than string concatenation
+//         // date = [now.getDate(), 
+//         //         months[now.getMonth()],
+//         //         now.getFullYear()].join(' ');
+
+//     // set the content of the element with the ID time to the formatted string
+//     document.getElementById('time').innerHTML = [now];
+
+//     // call this function again in 1000ms
+//     setTimeout(updateClock, 1000);
+// }
+// updateClock(); // initial call
+
+
+
 
