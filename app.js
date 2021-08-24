@@ -50,6 +50,8 @@ for (let i = 0; i < classtable.length; i++) {
     {
         $(".subject").text("Class Will Start In:- "+ (9 - hour) + "hr:"+ (60 - minute) +"min" );
         $(".subject").addClass("subject1");
+         $("Button").hide();   
+        
     }
     else if (
       (currenttime >= classtable[i].timestart)  &&
