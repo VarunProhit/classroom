@@ -22,13 +22,13 @@ var classtable=[
     {day:'2',slot: 'C', subjectname:'Discrete Structure',             subjectcode:'CSC301', faculityname:'Ms. Himani',classlink:'https://meet.google.com/lookup/gxpv3dpjze?authuser=0&hs=179',timestart:"10.0",timeend:"10.59"},
     {day:'2',slot: 'D', subjectname:'Digital Systems Design', subjectcode:'CSC304', faculityname:'Mr. Satish',classlink:'https://meet.google.com/lookup/ez4rp2zydz?authuser=0&hs=179',timestart:"11.0",timeend:"11.59"},
     {day:'2',slot: 'E', subjectname:'Automata and Formal Languages', subjectcode:'CSC305', faculityname:'Ms. Himani',classlink:'https://meet.google.com/lookup/delhw6nhkb?authuser=0&hs=179',timestart:"12.0",timeend:"12.59"},
-    {day:'2',slot: 'H', subjectname:'Practicum-III', subjectcode:'CSC306', faculityname:'Dr. Vikram',classlink:'https://www.google.com',timestart:"16:0",timeend:"16.59"},
+    {day:'2',slot: 'H', subjectname:'Practicum-III', subjectcode:'CSC306', faculityname:'Dr. Vikram',classlink:'https://www.google.com',timestart:"16.0",timeend:"16.59"},
     {day:'3',slot: 'A', subjectname:'Data Structure and Alogorithim', subjectcode:'CSC302', faculityname:'Dr. Bhuvaneswari',classlink:'https://meet.google.com/lookup/azfowqghjr?authuser=0&hs=179',timestart:"12.0",timeend:"12.59"},
     {day:'3',slot: 'B', subjectname:'Computer Organization',          subjectcode:'CSC303', faculityname:'Ms. Aknksha',classlink:'https://meet.google.com/lookup/adojphcqxj?authuser=0&hs=179',timestart:"14.0",timeend:"14.59"},
     {day:'3',slot: 'C', subjectname:'Discrete Structure',             subjectcode:'CSC301', faculityname:'Ms. Himani',classlink:'https://meet.google.com/lookup/gxpv3dpjze?authuser=0&hs=179',timestart:"9.0",timeend:"9.59"},
     {day:'3',slot: 'D', subjectname:'Digital Systems Design', subjectcode:'CSC304', faculityname:'Mr. Satish',classlink:'https://meet.google.com/lookup/ez4rp2zydz?authuser=0&hs=179',timestart:"10.0",timeend:"10.59"},
     {day:'3',slot: 'E', subjectname:'Automata and Formal Languages', subjectcode:'CSC305', faculityname:'Ms. Himani',classlink:'https://meet.google.com/lookup/gxpv3dpjze?authuser=0&hs=179',timestart:"11.0",timeend:"11.59"},
-    {day:'3',slot: 'H', subjectname:'Practicum-III', subjectcode:'CSC306', faculityname:'Dr. Vikram',classlink:'https://www.google.com',timestart:"16:0",timeend:"16.59"},
+    {day:'3',slot: 'H', subjectname:'Practicum-III', subjectcode:'CSC306', faculityname:'Dr. Vikram',classlink:'https://www.google.com',timestart:"16.0",timeend:"16.59"},
     {day:'4',slot: 'A', subjectname:'Data Structure and Alogorithim', subjectcode:'CSC302', faculityname:'Dr. Bhuvaneswari',classlink:'https://meet.google.com/lookup/azfowqghjr?authuser=0&hs=179',timestart:"11.0",timeend:"11.59"},
     {day:'4',slot: 'B', subjectname:'Computer Organization',          subjectcode:'CSC303', faculityname:'Ms. Aknksha',classlink:'https://meet.google.com/lookup/adojphcqxj?authuser=0&hs=179',timestart:"12.0",timeend:"12.59"},
     {day:'4',slot: 'C', subjectname:'Discrete Structure',             subjectcode:'CSC301', faculityname:'Ms. Himani',classlink:'https://meet.google.com/lookup/gxpv3dpjze?authuser=0&hs=179',timestart:"14.0",timeend:"14.59"},
@@ -101,10 +101,10 @@ for (let i = 0; i < classtable.length; i++) {
             $("Button").hide(); 
             $(".note").text("Join Your Respective Group Link");
         }
-        if(classtable[i].slot!='H')
-        {
-            $(".redirect").attr("content","5; url="+classtable[i].classlink);
-        }
+        // if(classtable[i].slot!='H')
+        // {
+        //     $(".redirect").attr("content","5; url="+classtable[i].classlink);
+        // }
         console.log("pass");
     }
     else if(hour>=17){
