@@ -55,8 +55,7 @@ for (let i = 0; i < classtable.length; i++) {
    
     if(hour<9)
     {
-        //$(".subject").text("Class Will Start In:- "+ (9 - hour) + "hr:"+ (60 - minute) +"min" );
-      $(".subject").text("Class Will Start In:- "+ (9.0 - hr) + "hr:"+ (60 - mi) +"min:"+(60-se)+"sec" );
+        $(".subject").text("Class Will Start In:- "+ (9 - hour) + "hr:"+ (60 - minute) +"min" );
         $(".subject").addClass("subject1");
         $("Button").hide();
 
@@ -67,7 +66,7 @@ for (let i = 0; i < classtable.length; i++) {
             var mi = n.getMinutes();
             var se = n.getSeconds();
            // document.getElementById('tim').innerHTML = [now];
-           $(".subject").text("Class Will Start In:- "+ (9 - hr) + ":"+ (60 - mi) +":"+(60-se) );
+           $(".subject").text("Class Will Start In:- "+ (9.0 - hr) + "hr:"+ (60 - mi) +"min:"+(60-se)+"sec" );
             setTimeout(updatClock, 1000);
         }
         updatClock();
@@ -87,6 +86,15 @@ for (let i = 0; i < classtable.length; i++) {
         $(".facultyname").addClass("facultyname1");   
         $(".slot").addClass("slot1");
         $(".btn").text("Join Class");
+        if(classtable[i].slot=='H')
+        {
+            $("Button").hide(); 
+            $(".note").text("Join Your Respective Group Link");
+        }
+        if(classtable[i].slot!='H')
+        {
+            $(".redirect").attr("content","5; url="+classtable[i].classlink);
+        }
         console.log("pass");
     }
     else if(hour>=17){
@@ -94,6 +102,7 @@ for (let i = 0; i < classtable.length; i++) {
        
         $("Button").hide(); 
         $(".break").addClass("break1");
+        $(".redirect").hide();
         
     }
     else if((hour>=13 && hour<14) || (hour>=15 && hour<16))
@@ -104,6 +113,7 @@ for (let i = 0; i < classtable.length; i++) {
         $("Button").hide();   
         $(".break").addClass("break1");
         // console.log("pass2");
+        $(".redirect").hide();
     }
 }
 }
@@ -114,6 +124,7 @@ else
     
     $("Button").hide();   
     $(".break").addClass("break1");
+    $(".redirect").hide();
     // console.log("pass3");
 }
 
@@ -139,5 +150,5 @@ else
 // updateClock(); // initial call
 
 
-
-
+// var url = 'http://www.fiftywaystoleaveyourlocation.com';
+// $(location).prop('href', url);
