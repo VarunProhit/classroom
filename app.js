@@ -66,6 +66,8 @@ for (let i = 0; i < classtable.length; i++) {
             var mi = n.getMinutes();
             var se = n.getSeconds();
            // document.getElementById('tim').innerHTML = [now];
+          if(hr<9)
+          {
            if((8-hr)!=0)
            {
            $(".subject").text("Class Will Start In:- "+ (8.0 - hr) + "hr:"+ (59- mi) +"min:"+(59-se)+"sec" );
@@ -77,6 +79,7 @@ for (let i = 0; i < classtable.length; i++) {
            else{
             $(".subject").text("Class Will Start In:- "+ (59-se)+"sec" );
            }
+          }
             setTimeout(updatClock, 1000);
         }
         updatClock();
