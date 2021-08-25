@@ -55,7 +55,7 @@ for (let i = 0; i < classtable.length; i++) {
    
     if(hour<9)
     {
-        $(".subject").text("Class Will Start In:- "+ (9 - hour) + "hr:"+ (60 - minute) +"min" );
+      
         $(".subject").addClass("subject1");
         $("Button").hide();
 
@@ -66,7 +66,17 @@ for (let i = 0; i < classtable.length; i++) {
             var mi = n.getMinutes();
             var se = n.getSeconds();
            // document.getElementById('tim').innerHTML = [now];
-           $(".subject").text("Class Will Start In:- "+ (9.0 - hr) + "hr:"+ (60 - mi) +"min:"+(60-se)+"sec" );
+           if((8-hr)!=0)
+           {
+           $(".subject").text("Class Will Start In:- "+ (8.0 - hr) + "hr:"+ (59- mi) +"min:"+(59-se)+"sec" );
+           }
+           else if((59-mi)!=0)
+           {
+            $(".subject").text("Class Will Start In:- "+ (59- mi) +"min:"+(59-se)+"sec" );
+           }
+           else{
+            $(".subject").text("Class Will Start In:- "+ (59-se)+"sec" );
+           }
             setTimeout(updatClock, 1000);
         }
         updatClock();
@@ -152,3 +162,4 @@ else
 
 // var url = 'http://www.fiftywaystoleaveyourlocation.com';
 // $(location).prop('href', url);
+
