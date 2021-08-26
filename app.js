@@ -45,6 +45,10 @@ function updateClock() {
     var now = new Date(); 
    // document.getElementById('tim').innerHTML = [now];
    $(".date").text(now);
+     if(minute==0 && second==0)
+   {
+    $(".reload").attr("content","1");
+   }
     setTimeout(updateClock, 1000);
 }
 updateClock();
