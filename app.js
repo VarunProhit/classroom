@@ -44,11 +44,11 @@ var classtable=[
 function updateClock() {
     var now = new Date(); 
    // document.getElementById('tim').innerHTML = [now];
-   $(".date").text(now);
-     if(minute==0 && second==0)
-   {
-    $(".reload").attr("content","1");
-   }
+   
+   
+    $(".date").text(now);
+    // $(".reload").attr("content","1");
+   
     setTimeout(updateClock, 1000);
 }
 updateClock();
@@ -151,13 +151,13 @@ else
     // console.log("pass3");
 }
 
-for (let j = 0; j < 24; j++)
-{
-    if(hour==j && minute==0 && (second ==0 || second==1))
-     { 
-         $(".reload").attr("content","1");
-     }
-}
+// for (let j = 0; j < 24; j++)
+// {
+//     if(hour==j && minute==0 && (second ==0 || second==1))
+//      { 
+//          $(".reload").attr("content","1");
+//      }
+// }
 // if((hour>=9 && hour<17) && (day>=1 &&day<=4))
 // {
 //     $(".reload").attr("content","4");
@@ -166,3 +166,16 @@ for (let j = 0; j < 24; j++)
 // {
 //     $(".reload").attr("content","40");
 // }
+function update() {
+    var ne = new Date(); 
+   // document.getElementById('tim').innerHTML = [now];
+    var seco= ne.getSeconds();
+    var mit = ne.getMinutes();
+    
+    if(seco == 0 && mit==0 )
+    {
+    $(".reload").attr("content","1");
+    }
+    setTimeout(update, 1000);
+}
+update();
