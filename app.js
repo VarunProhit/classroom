@@ -34,7 +34,10 @@ var classtable=[
     {day:'4',slot: 'C', subjectname:'Discrete Structure',             subjectcode:'CSC301', faculityname:'Ms. Himani',classlink:'https://meet.google.com/lookup/gxpv3dpjze?authuser=0&hs=179',timestart:"14.0",timeend:"14.59"},
     {day:'4',slot: 'D', subjectname:'Digital Systems Design', subjectcode:'CSC304', faculityname:'Mr. Satish',classlink:'https://meet.google.com/lookup/ez4rp2zydz?authuser=0&hs=179',timestart:"9.0",timeend:"9.59"},
     {day:'4',slot: 'E', subjectname:'Automata and Formal Languages', subjectcode:'CSC305', faculityname:'Ms. Himani',classlink:'https://meet.google.com/lookup/gd457qflnm?authuser=0&hs=179',timestart:"10.0",timeend:"10.59"},
-    {day:'4',slot: 'H', subjectname:'Practicum-III', subjectcode:'CSC306', faculityname:'Dr. Vikram',classlink:'https://www.google.com',timestart:"16.0",timeend:"16.59"}
+    {day:'4',slot: 'H', subjectname:'Practicum-III', subjectcode:'CSC306', faculityname:'Dr. Vikram',classlink:'https://www.google.com',timestart:"16.0",timeend:"16.59"},
+     {day:'1',slot: 'A', subjectname:'Data Structure and Alogorithim Lab(G1)', subjectcode:'CSC302', faculityname:'Dr. Bhuvaneswari',classlink:'https://meet.google.com/lookup/azfowqghjr?authuser=0&hs=179',timestart:"15.0",timeend:"15.59"},
+    {day:'3',slot: 'A', subjectname:'Data Structure and Alogorithim Lab(G2)', subjectcode:'CSC302', faculityname:'Dr. Bhuvaneswari',classlink:'https://meet.google.com/lookup/azfowqghjr?authuser=0&hs=179',timestart:"15.0",timeend:"15.59"},
+    {day:'2',slot: 'B', subjectname:'Computer Organization Lab',          subjectcode:'CSC303', faculityname:'Ms. Aknksha',classlink:'https://meet.google.com/lookup/adojphcqxj?authuser=0&hs=179',timestart:"15.0",timeend:"15.59"}
     
 
 
