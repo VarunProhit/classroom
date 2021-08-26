@@ -149,7 +149,7 @@ else
 
 for (let j = 0; j < 24; j++)
 {
-    if(hour==j && minute==0 && (second ==0 || second==1))
+    if(hour==j && minute==0 && second ==0 )
      { 
          $(".reload").attr("content","1");
      }
