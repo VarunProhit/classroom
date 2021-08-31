@@ -1,4 +1,5 @@
 
+
 var today = new Date();
   var day = today.getDay();
   var daylist = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
@@ -123,7 +124,7 @@ for (let i = 0; i < classtable.length; i++) {
         // }
         console.log("pass");
     }
-    else if((hour>=13 && hour<14) || (hour>=15 && hour<16))
+    else if((hour>=13 && hour<14) || (hour>=15 && hour<16 && day==4))
     {
         $(".break").text("BREAK");
         // $("a").removeAttr("href");
@@ -175,7 +176,7 @@ function update() {
     var seco= ne.getSeconds();
     var mit = ne.getMinutes();
     
-    if(seco == 0 && mit==14 )
+    if(seco == 0 && mit==0 )
     {
     $(".reload").attr("content","1");
     }
